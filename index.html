@@ -4,147 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mel's Hair & Beauty — Hairdresser in Berowra Heights, NSW</title>
-    <meta name="description" content="Professional hairdressing services in Berowra Heights. Expert cuts, stunning colours, and premium beauty treatments. Book your appointment today.">
+    <meta name="description" content="Professional hair styling, coloring and beauty treatments in Berowra Heights. Experience luxury and care at Mel's Hair & Beauty. 4.6 star rated.">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mel's Hair & Beauty — Hairdresser in Berowra Heights">
+    <meta property="og:description" content="Professional hair styling, coloring and beauty treatments in Berowra Heights. Book your appointment now.">
+    <meta property="og:type" content="website">
     
-    <link rel="stylesheet" href="styles.css?v=1af624bf">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Scripts & Styles -->
+    <link rel="stylesheet" href="styles.css?v=a8f00a36">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <nav>
         <div class="container nav-content">
             <a href="#" class="logo">MEL'S HAIR & BEAUTY</a>
-            <div class="hamburger" id="menu-toggle">☰</div>
-            <div class="nav-links" id="nav-menu">
-                <a href="#about">About</a>
+            <div class="nav-links">
                 <a href="#services">Services</a>
-                <a href="#testimonials">Reviews</a>
-                <a href="tel:+61294562188" class="btn btn-primary">Call (02) 9456 2188</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:+61294562188" class="nav-cta"><i class="fas fa-phone"></i> 02 9456 2188</a>
             </div>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:+61294562188">Call: 02 9456 2188</a>
         </div>
     </nav>
 
     <header id="hero">
-        <div class="container">
+        <div class="container hero-content">
+            <div class="rating-badge">
+                4.6 &#9733; (38 reviews)
+            </div>
             <h1>Hairdresser in Berowra Heights</h1>
-            <p class="rating-hero">4.6 &#9733; (38 reviews)</p>
-            <a href="tel:+61294562188" class="btn btn-primary">Book Your Transformation</a>
+            <p>Elevating your beauty experience with precision cuts, vibrant colors, and personalized style right in the heart of Berowra Heights.</p>
+            <a href="tel:+61294562188" class="btn">Book Your Appointment</a>
         </div>
     </header>
 
-    <div class="trust-bar">
-        <div class="container stats-grid">
-            <div class="stat-item">
-                <h4>Premium Products</h4>
-                <p>Only the best for your hair</p>
+    <section class="trust-bar">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <i class="fas fa-star" style="color: #d4af37; font-size: 24px;"></i>
+                <h3>4.6/5 Stars</h3>
+                <p>Google Rating</p>
             </div>
-            <div class="stat-item">
-                <h4>4.6 &#9733; Rating</h4>
-                <p>38 Google Reviews</p>
+            <div class="trust-item">
+                <i class="fas fa-scissors" style="color: #d4af37; font-size: 24px;"></i>
+                <h3>Expert Team</h3>
+                <p>Master Stylists</p>
             </div>
-            <div class="stat-item">
-                <h4>Expert Stylists</h4>
-                <p>Award-winning techniques</p>
+            <div class="trust-item">
+                <i class="fas fa-heart" style="color: #d4af37; font-size: 24px;"></i>
+                <h3>Local Choice</h3>
+                <p>Berowra Heights</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section id="services">
+    <section id="services" class="section-padding">
         <div class="container">
             <div class="section-title">
-                <h2>Our Services</h2>
-                <div></div>
-                <p>Tailored treatments for your unique style</p>
+                <h2>Our Premium Services</h2>
+                <div class="divider"></div>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('images/service1.png')"></div>
+                    <div class="service-img">
+                        <img src="images/service1.png" alt="Hair Styling">
+                    </div>
                     <div class="service-info">
                         <h3>Cutting & Styling</h3>
-                        <p>From precision cuts to effortless everyday styles, we create looks that enhance your features.</p>
+                        <p>From contemporary transformations to classic maintenance, our stylists work with you to find the perfect silhouette for your face shape.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('images/service2.png')"></div>
+                    <div class="service-img">
+                        <img src="images/service2.png" alt="Hair Color">
+                    </div>
                     <div class="service-info">
-                        <h3>Colour Expertise</h3>
-                        <p>Specializing in balayage, highlights, and full transformations using premium, hair-healthy dyes.</p>
+                        <h3>Vibrant Coloring</h3>
+                        <p>Specializing in balayage, highlights, and full-color transformations using premium products that maintain your hair's health.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-img" style="background-image: url('images/service3.png')"></div>
+                    <div class="service-img">
+                        <img src="images/service3.png" alt="Beauty Care">
+                    </div>
                     <div class="service-info">
-                        <h3>Luxe Treatments</h3>
-                        <p>Deep conditioning and scalp treatments designed to restore shine and health to your hair.</p>
+                        <h3>Beauty Treatments</h3>
+                        <p>Complete your look with our range of beauty treatments designed to leave you feeling refreshed, rejuvenated, and confident.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <div class="container about-content">
-            <div class="about-text">
-                <div class="section-title" style="text-align: left;">
-                    <h2 style="text-align: left;">Welcome to Mel's</h2>
-                    <div style="margin: 15px 0;"></div>
-                </div>
-                <p>Located in the heart of Berowra Heights, Mel's Hair & Beauty is dedicated to providing an exceptional experience for every client. Our passion for hair and beauty drives us to stay at the forefront of industry trends, ensuring you leave our salon feeling confident and revitalised.</p>
-                <br>
-                <p>Whether you're looking for a fresh new look or a classic cut, Mel and her talented team offer a warm, welcoming environment where your hair goals become reality.</p>
-            </div>
-            <div class="about-hours">
-                <h3>Opening Hours</h3>
-                <ul class="hours-list">
-                    <li><span>Monday</span> <span>9 AM to 5 PM</span></li>
-                    <li><span>Tuesday</span> <span>9 AM to 5 PM</span></li>
-                    <li><span>Wednesday</span> <span>9 AM to 5 PM</span></li>
-                    <li><span>Thursday</span> <span>9 AM to 8 PM</span></li>
-                    <li><span>Friday</span> <span>9 AM to 5 PM</span></li>
-                    <li><span>Saturday</span> <span>8 AM to 3 PM</span></li>
-                    <li><span>Sunday</span> <span>Closed</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="testimonials">
+    <section id="about" class="section-padding" style="background: white;">
         <div class="container">
             <div class="section-title">
-                <h2>Loved by Berowra</h2>
-                <div></div>
-                <p>Real stories from our wonderful clients</p>
+                <h2>Excellence in Hair & Beauty</h2>
+                <div class="divider"></div>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; color: #555;">At Mel's Hair & Beauty, we believe that your visit should be more than just an appointment—it should be a moment of luxury. Our dedicated team of specialists, led by Mel, brings years of experience and a passion for craftsmanship to every chair. Whether you're looking for a sharp new cut, a fresh color, or a complete style overhaul, we provide a welcoming atmosphere where your hair dreams become reality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section-padding testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>4.6 &#9733; (38 reviews)</p>
+                <div class="divider"></div>
             </div>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p>"My son said I looked like a hobo and after Fiona had finished with me was back to more his liking - she is a legend. A return visit yesterday and this place just exists to excel ….. keep it up"</p>
-                    <br>
-                    <strong>— Craig Astrom</strong>
+                    <p class="testimonial-text">"My son said I looked like a hobo and after Fiona had finished with me was back to more his liking - she is a legend. A return visit yesterday and this place just exists to excel ….. keep it up"</p>
+                    <p class="testimonial-author">— Craig Astrom</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p>"Just got my hair done with Mel for the first time and am absolutely blown away by the amazing job she has done fixing my hair... A stunning result - cannot recommend her enough!"</p>
-                    <br>
-                    <strong>— Ksana Osborne</strong>
+                    <p class="testimonial-text">"Just got my hair done with Mel for the first time and am absolutely blown away by the amazing job she has done fixing my hair. A stunning result - cannot recommend her enough."</p>
+                    <p class="testimonial-author">— Ksana Osborne</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p>"Great service and Emily is excellent always does my hair perfect"</p>
-                    <br>
-                    <strong>— Jo English</strong>
+                    <p class="testimonial-text">"great service and Emily is excellent always does my hair perfect"</p>
+                    <p class="testimonial-author">— Jo English</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="cta-banner">
-        <div class="container">
-            <h2>Ready for a new look?</h2>
-            <p style="margin: 20px 0; font-size: 1.2rem;">4.6 &#9733; (38 reviews in Berowra Heights)</p>
-            <a href="tel:+61294562188" class="btn btn-primary">Call to Book: (02) 9456 2188</a>
+        <div class="container cta-content">
+            <h2>Ready for a New Look?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Highly rated local service: 4.6 &#9733; (38 reviews)</p>
+            <a href="tel:+61294562188" class="btn">Call to Book Now</a>
+        </div>
+    </section>
+
+    <section id="contact" class="info-section">
+        <div class="map-container">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                style="border:0" 
+                src="https://www.google.com/maps/embed/v1/place?key=REPLACE_WITH_YOUR_API_KEY&q=Mel's+Hair+%26+Beauty,Berowra+Heights+NSW&center=-33.6129161,151.1384562&zoom=15" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="hours-container">
+            <h2>Visit Us</h2>
+            <p>Shop 6, 1 Turner Rd, Berowra Heights NSW 2082</p>
+            <ul class="hours-list">
+                <li><span>Monday</span> <span>9:00 AM – 5:00 PM</span></li>
+                <li><span>Tuesday</span> <span>9:00 AM – 5:00 PM</span></li>
+                <li><span>Wednesday</span> <span>9:00 AM – 5:00 PM</span></li>
+                <li><span>Thursday</span> <span>9:00 AM – 8:00 PM</span></li>
+                <li><span>Friday</span> <span>9:00 AM – 5:00 PM</span></li>
+                <li><span>Saturday</span> <span>8:00 AM – 3:00 PM</span></li>
+                <li><span>Sunday</span> <span>Closed</span></li>
+            </ul>
         </div>
     </section>
 
@@ -152,33 +191,29 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>MEL'S HAIR & BEAUTY</h4>
-                    <p>Berowra Heights, NSW</p>
-                    <p>Phone: <a href="tel:+61294562188">+61 2 9456 2188</a></p>
-                    <p class="stars">4.6 &#9733; (38 reviews)</p>
+                    <h4>Mel's Hair & Beauty</h4>
+                    <p>Your local boutique salon in Berowra Heights, offering professional hair and beauty services with a personal touch since day one.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <a href="#about">About Us</a>
-                    <a href="#services">Our Services</a>
-                    <a href="#testimonials">Reviews</a>
+                    <a href="#hero">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#reviews">Reviews</a>
                 </div>
-                <div class="footer-col">
-                    <h4>Find Us</h4>
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3323.364491!2d151.1384562!3d-33.6129161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1700000000000" 
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
+                <div class="footer-col" id="contact-info">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Berowra Heights, NSW</p>
+                    <a href="tel:+61294562188"><i class="fas fa-phone"></i> +61 2 9456 2188</a>
+                    <p><i class="fas fa-star" style="color:var(--accent)"></i> 4.6 &#9733; (38 reviews)</p>
                 </div>
             </div>
-            <p style="text-align: center; font-size: 0.9rem; color: #666; border-top: 1px solid #333; padding-top: 20px;">
-                &copy; 2023 Mel's Hair & Beauty. All rights reserved. Professional Hairdresser in Berowra Heights, NSW.
-            </p>
+            <div class="copyright">
+                <p>&copy; 2023 Mel's Hair & Beauty. All rights reserved. Professional Hairdresser in Berowra Heights.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js?v=1af624bf"></script>
+    <script src="script.js?v=a8f00a36"></script>
 </body>
 </html>
