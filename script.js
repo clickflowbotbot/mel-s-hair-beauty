@@ -1,67 +1,46 @@
-
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
 
-    // --- Mobile Navigation Toggle ---
-    const hamburgerButton = document.getElementById('hamburger-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = mobileMenu.querySelectorAll('a');
+    mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+    });
 
-    const toggleMenu = () => {
-        hamburgerButton.classList.toggle('is-active');
-        mobileMenu.classList.toggle('is-active');
-        // Prevent body scrolling when menu is open
-        document.body.style.overflow = mobileMenu.classList.contains('is-active') ? 'hidden' : '';
-    };
-
-    hamburgerButton.addEventListener('click', toggleMenu);
-
-    // Close menu when a link is clicked
-    navLinks.forEach(link => {
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('is-active')) {
-                toggleMenu();
-            }
+            navLinks.classList.remove('active');
+            mobileToggle.textContent = '☰';
         });
     });
 
-    // --- Smooth Scrolling for all anchor links ---
+    // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
                 });
             }
         });
     });
 
-    // --- Animate elements on scroll ---
-    const animatedElements = document.querySelectorAll('.fade-in');
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        rootMargin: '0px',
-        threshold: 0.1
+    // Scroll effect for navbar
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.style.padding = '10px 0';
+            nav.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            nav.style.padding = '0';
+        }
     });
-
-    animatedElements.forEach(element => {
-        observer.observe(element);
-    });
-
-    // --- Set current year in footer ---
-    const yearSpan = document.getElementById('current-year');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-
 });
